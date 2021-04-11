@@ -1,19 +1,24 @@
 package OOPs;
 
-public class Animal {
-
-//	global veriable
-	String name;
-	public static void main(String[] args) {
-		int a= 10;
-		
-		Animal dog = new Animal();
-		dog.Sound();
-
+class Animal{ 
+	public static void main(String args[]){  
+		BabyDog d=new BabyDog();  
+			d.weep();  
+			d.bark();  
+			d.eat();  
 	}
-	
-	public void Sound() {
-		System.out.println("bho..bhao");
-	}
-
-}
+	void eat(){
+		System.out.println("eating...");
+		}  
+}  
+class Dog extends Animal{  
+	void bark(){
+		System.out.println("barking...");
+		}  
+}  
+class BabyDog extends Dog{  
+	void weep(){
+		System.out.println("weeping...");
+		}  
+}  
+ 
